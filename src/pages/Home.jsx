@@ -58,7 +58,7 @@ function Home() {
   return (
     <div className="">
       
-      <h1 className="text-xl text-red-500 ml-36 w-52">Popular Movies</h1>
+      <h1 className="text-xl text-green-500 ml-36 w-52">Popular Movies</h1>
       <div className="m-28 flex flex-wrap justify-start gap-2">
         {data1.map(movie => <Link key={movie.id} to={`movie/${movie.id}`}> <Card title={movie.original_title} source={movie.poster_path} id={movie.id}  /> </Link>)}
       </div>
